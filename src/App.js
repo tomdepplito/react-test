@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 import { Button } from 'react-bootstrap';
+import { SignupForm } from './components/signup';
 
 const Home = () => (
   <div>
@@ -27,6 +28,7 @@ const Topic = ({ match }) => (
 const Topics = ({ match }) => (
   <div>
     <h2>Topics</h2>
+    <SignupForm/>
     <ul>
       <li>
         <Button>
