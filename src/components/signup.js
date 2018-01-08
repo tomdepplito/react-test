@@ -6,11 +6,11 @@ class SignupForm extends React.Component {
     super(props);
     this.handleChange = this.handleChange.bind(null);
     this.state = {
-      'value': ''
+      value: ''
     }
   }
 
-  getValidationState() {
+  getValidationState = () => {
     const length = this.state.value.length;
     if (length > 10) return 'success';
     else if (length > 5) return 'warning';
@@ -18,7 +18,7 @@ class SignupForm extends React.Component {
     return null;
   }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({ value: e.target.value });
   }
 
